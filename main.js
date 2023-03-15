@@ -3,11 +3,12 @@ let arrayEmps = [];
 let empId;
 let compClave;
 function ingresoNuevoEmpleado() {
+    alert("Estás a punto de ingresar datos sensibles\nPresta especial atención a las referencias\nUtiliza mayúscula en los nombres propios\nEvita el uso de caracteres especiales\n(la totalidad de tus datos estarán cifrados en los servidores de la empresa y NO se compartirán bajo ningún concepto, de acuerdo con nuestra política de privacidad)\n--Adelante entonces!!-->-->")
     let nb = prompt ("Nombre: ");
     let ap = prompt ("Apellido: ");
     let cr = +prompt ("Cargo: (formato: [n] nro. del 1 al 4)");
-    let dc = +prompt ("Documento: (formato: [nnnnnnnn] 7 u 8 dígitos sin espacios, puntos ni guiones)");
-    let ig = +prompt ("Fecha ingreso: (formato: [aaaamm] año y mes sin espacios, puntos ni guiones)");
+    let dc = +prompt ("Documento: (formato: [nnnnnnnn] 7 u 8 dígitos numéricos sin espacios, puntos ni guiones)");
+    let ig = +prompt ("Fecha de ingreso: (formato: [aaaamm] año y mes sin espacios, puntos ni guiones)");
     empId = new nuevoEmpleado (nb, ap, cr, dc, ig, nuevaClave);
     alert("Tu nuevo número de empleado es "+nuevaClave+" y con el, tendrás acceso a la página de Personal");   
 }
